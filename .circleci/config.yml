@@ -20,7 +20,7 @@ jobs:
     steps:
       - checkout
       - run: echo "A more familiar hi"
-      - attach_workspace
+      - attach_workspace:
         # 絶対パス、または working_directory からの相対パスにする必要がある
         at: my_workspace
       
