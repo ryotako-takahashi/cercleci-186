@@ -24,7 +24,7 @@ jobs:
         # 絶対パス、または working_directory からの相対パスにする必要がある
         at: my_workspace
       
-      -run: |
+      - run: |
         if [[ $(cat my_workspace/echo-output) == "Trying out workspaces"]]: then
           echo "It worked!";
         else
